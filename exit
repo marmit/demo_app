@@ -1,0 +1,19 @@
+[1mdiff --git a/app/controllers/users_controller.rb b/app/controllers/users_controller.rb[m
+[1mindex aafd63b..4e10818 100644[m
+[1m--- a/app/controllers/users_controller.rb[m
+[1m+++ b/app/controllers/users_controller.rb[m
+[36m@@ -3,11 +3,6 @@[m [mclass UsersController < ApplicationController[m
+   # GET /users.xml[m
+   def index[m
+     @users = User.all[m
+[31m-[m
+[31m-    respond_to do |format|[m
+[31m-      format.html # index.html.erb[m
+[31m-      format.xml  { render :xml => @users }[m
+[31m-    end[m
+   end[m
+ [m
+   # GET /users/1[m
+[1mdiff --git a/db/schema.rb b/db/schema.rb[m
+warning: LF will be replaced by CRLF in config/routes.rb
+warning: LF will be replaced by CRLF in app/controllers/users_controller.rb
